@@ -69,7 +69,7 @@ void BD::delet(const MyString& str) {
 
 }
 void BD::Resize(int keyNum, bool flag) {
-	Pair** tmp = new Pair * [cap]; // тоже можно вынести
+	Pair** tmp = new Pair * [cap]; // ГІГ®Г¦ГҐ Г¬Г®Г¦Г­Г® ГўГ»Г­ГҐГ±ГІГЁ
 	for (int i = 0; i < kolvo + 1; i++) {
 		if (i == keyNum) {
 			flag = true;
@@ -144,7 +144,7 @@ BD& BD::operator=(const BD& bd) {
 	for (int i = 0; i < kolvo; i++) {
 		if (pp[i] != nullptr) delete pp[i];
 	}
-	if (pp != nullptr) delete[] pp;//доудаляла
+	if (pp != nullptr) delete[] pp;//Г¤Г®ГіГ¤Г Г«ГїГ«Г 
 
 	pp = new Pair * [cap];
 	for (int i = 0; i < kolvo; i++) {
