@@ -9,7 +9,7 @@ public:
 	Point& operator+=(const Point& p1);
 	Point& operator+=(int val);
 
-	friend Point& operator-=(Point& pt1, const Point& pt2);//необязательно
+	friend Point& operator-=(Point& pt1, const Point& pt2);//Г­ГҐГ®ГЎГїГ§Г ГІГҐГ«ГјГ­Г®
 	friend Point& operator-=(Point& pt1, int val);
 
 	Point operator+(const Point& p2) const;
