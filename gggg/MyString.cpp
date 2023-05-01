@@ -4,7 +4,7 @@
 #include "BD.h"
 #include <iostream>
 
-//MyString Constructor:: по умолчанию
+//MyString Constructor:: ГЇГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ
 MyString::MyString() {
 	m_pStr = nullptr;
 };
@@ -41,10 +41,10 @@ const char* MyString::GetString() const {
 		return "GetString Error";
 };
 
-MyString cochet(const char* p, ...) {//указатель на первый элемент массива
+MyString cochet(const char* p, ...) {//ГіГЄГ Г§Г ГІГҐГ«Гј Г­Г  ГЇГҐГ°ГўГ»Г© ГЅГ«ГҐГ¬ГҐГ­ГІ Г¬Г Г±Г±ГЁГўГ 
 	int count = 0;
-	const char** str = &p;// указатель на первый элемент элемента массива
-	while (*str) {//узнали размер суммарный у массива
+	const char** str = &p;// ГіГЄГ Г§Г ГІГҐГ«Гј Г­Г  ГЇГҐГ°ГўГ»Г© ГЅГ«ГҐГ¬ГҐГ­ГІ ГЅГ«ГҐГ¬ГҐГ­ГІГ  Г¬Г Г±Г±ГЁГўГ 
+	while (*str) {//ГіГ§Г­Г Г«ГЁ Г°Г Г§Г¬ГҐГ° Г±ГіГ¬Г¬Г Г°Г­Г»Г© Гі Г¬Г Г±Г±ГЁГўГ 
 		count += strlen(*str);
 		str++;
 	};
@@ -63,7 +63,7 @@ MyString cochet(const char* p, ...) {//указатель на первый элемент массива
 };
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//перегрузка =
+//ГЇГҐГ°ГҐГЈГ°ГіГ§ГЄГ  =
 MyString& MyString::operator =(const MyString& mon) {
 	if (&mon == this) return *this;
 	if (m_pStr) delete[] m_pStr;
